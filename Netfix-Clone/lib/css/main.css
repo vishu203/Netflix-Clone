@@ -1,0 +1,95 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;   
+}
+
+body{
+background-color: black;
+color: white;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: red;
+}
+
+/*
+# DOM MODEL:
+#        header
+#      container
+#    logo   nav
+#            a a a a
+*/
+
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: dodgerblue;
+}
+
+
+.film-principal{
+    font-size: 16px;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5) 100%),url("../img/bg.jpg");
+     height: 50vh; 
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: flex-start;
+     background-size: cover;
+}
+
+.film-principal .description{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.film-principal .title{
+    margin-top: 15px;
+    font-size: 40px;
+}
+
+.button-watch{
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 15px 30px;
+}
+
+.button-watch:hover{
+    background-color: dodgerblue;
+    color: black;
+}
+
+.container{
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.film-principal .container{
+    width: 70%;
+}
+
+
+.box-film{
+    height: 40vh;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    display: flex;
+    flex: row;
+}
+
+.carousel-films{
+    margin-top: 5px;
+}
